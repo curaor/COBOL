@@ -19,4 +19,4 @@ ftp -n -s:ftpcmd.dat PUB400.COM
 
 del "%WORKSPACE%\ftpcmd.dat"
 
-echo "DEMO Program Build Successful"
+echo "DEMO Program Build Successful!!!"
