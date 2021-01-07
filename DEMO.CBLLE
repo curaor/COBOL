@@ -1,11 +1,11 @@
-000100210106      *> setup the identification division
-000200210106          IDENTIFICATION DIVISION.
-000300210106      *> setup the program id
-000400210106          PROGRAM-ID. DEMO.
-000500210106      *> setup the procedure division (like 'main' function)
-000600210106          PROCEDURE DIVISION.
-000700210106      *> print a string
-000800210107           DISPLAY 'DevOps COBOL ILE Demo January 6, 2021'.
-000900210106      *> end our program
-001000210106           STOP RUN.
-001100210106
+      *> setup the identification division
+          IDENTIFICATION DIVISION.
+      *> setup the program id
+          PROGRAM-ID. DEMO.
+      *> setup the procedure division (like 'main' function)
+          PROCEDURE DIVISION.
+      *> print a string
+           DISPLAY 'DevOps COBOL ILE Demo January 6, 2021'.
+      *> end our program
+           STOP RUN.
+
