@@ -19,6 +19,4 @@ echo bye>> ftpcmd.dat
 
 ftp -n -s:ftpcmd.dat PUB400.COM
 
-del "%WORKSPACE%\ftpcmd.dat"
-
 echo "Deployment!!!"
