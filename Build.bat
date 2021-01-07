@@ -9,7 +9,7 @@ echo LCD %WORKSPACE% >> ftpcmd.dat
 
 echo CD OMARCURA11 >> ftpcmd.dat
 
-echo PUT OMARCURA11/DEMO.CBLLE  QCBLLESRC.DEMO >> ftpcmd.dat
+echo PUT DEMO.CBLLE  QCBLLESRC.DEMO >> ftpcmd.dat
 
 echo quote rcmd CHGPFM FILE(OMARCURA11/QCBLLESRC) MBR(DEMO) SRCTYPE(CBLLE) TEXT('DEVOPS WAY TO DEPLOY') >> ftpcmd.dat
 
