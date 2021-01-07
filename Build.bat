@@ -17,4 +17,6 @@ echo bye>> ftpcmd.dat
 
 ftp -n -s:ftpcmd.dat PUB400.COM
 
-echo "Program Build Successful;"
+del "%WORKSPACE%\ftpcmd.dat"
+
+echo "DEMO Program Build Successful"
