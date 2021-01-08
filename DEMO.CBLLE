@@ -5,7 +5,7 @@
       *> setup the procedure division (like 'main' function)
           PROCEDURE DIVISION.
       *> print a string
-           DISPLAY 'DevOps COBOL ILE Demo January 6, 2021 (modified version)'.
+           DISPLAY 'DevOps COBOL ILE Demo January 6, 2021 (modified version!)'.
       *> end our program
            STOP RUN.
 
