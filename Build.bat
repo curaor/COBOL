@@ -20,3 +20,5 @@ ftp -n -s:ftpcmd.dat PUB400.COM
 del "%WORKSPACE%\ftpcmd.dat"
 
 echo "%PUB400_PGM% Program Build in library %PUB400_LIB% Successful!!!"
+
+del "%WORKSPACE%\Build.bat"
