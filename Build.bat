@@ -15,7 +15,7 @@ echo quote rcmd CRTBNDCBL PGM(%PUB400_LIB%/%PUB400_PGM%) SRCFILE(%PUB400_LIB%/QC
 
 echo bye>> ftpcmd.dat
 
-ftp -n -s:ftpcmd.dat PUB400.COM
+ftp -n -s:ftpcmd.dat %PUB400_MACHINE%
 
 echo "%PUB400_PGM% Program Build in library %PUB400_LIB% Completed"
 
