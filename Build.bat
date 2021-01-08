@@ -17,6 +17,6 @@ echo bye>> ftpcmd.dat
 
 ftp -n -s:ftpcmd.dat %PUB400_MACHINE%
 
-echo "%PUB400_PGM% Program Build in library %PUB400_LIB% Completed"
+echo "%PUB400_PGM% Program Build in %PUB400_MACHINE% library %PUB400_LIB% Completed"
 
 del "%WORKSPACE%\ftpcmd.dat"
