@@ -7,11 +7,21 @@ echo ASCII>> ftpcmd.dat
 
 echo LCD %WORKSPACE% >> ftpcmd.dat
 
+echo CD /QSYS.LIB/%PUB400_LIB%.LIB >> ftpcmd.dat
+
 echo PUT DEMO.CBLLE  /QSYS.LIB/%PUB400_LIB%.LIB/QCBLLESRC.FILE/%PUB400_PGM%.MBR >> ftpcmd.dat
 
 echo quote rcmd CHGPFM FILE(%PUB400_LIB%/QCBLLESRC) MBR(%PUB400_PGM%) SRCTYPE(CBLLE) TEXT('%PUB400_TEXT%') >> ftpcmd.dat
 
 echo quote rcmd CRTBNDCBL PGM(%PUB400_LIB%/%PUB400_PGM%) SRCFILE(%PUB400_LIB%/QCBLLESRC) SRCMBR(%PUB400_PGM%) REPLACE(*YES) OPTION(*EVENTF) DBGVIEW(*SOURCE) >> ftpcmd.dat
+
+echo quote rcmd CRTSAVF  FILE(%PUB400_LIB%/%PUB400_PGM%SAVF) >> ftpcmd.dat
+
+echo quote rcmd CLRSAVF FILE(%PUB400_LIB%/%PUB400_PGM%SAVF) >> ftpcmd.dat
+
+echo quote rcmd SAVOBJ OBJ(DEMO) LIB(%PUB400_LIB%) DEV(*SAVF) SAVF(%PUB400_LIB%/%PUB400_PGM%SAVF) >> ftpcmd.dat
+
+echo GET /QSYS.LIB/%PUB400_LIB%/%PUB400_PGM%SAVF >> ftpcmd.dat
 
 echo bye>> ftpcmd.dat
 
