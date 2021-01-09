@@ -21,6 +21,8 @@ echo quote rcmd CLRSAVF FILE(%PUB400_LIB%/%PUB400_PGM%SAVF) >> ftpcmd.dat
 
 echo quote rcmd SAVOBJ OBJ(DEMO) LIB(%PUB400_LIB%) DEV(*SAVF) SAVF(%PUB400_LIB%/%PUB400_PGM%SAVF) >> ftpcmd.dat
 
+echo BIN >> ftpcmd.dat
+
 echo GET %PUB400_PGM%SAVF.SAVF >> ftpcmd.dat
 
 echo bye>> ftpcmd.dat
