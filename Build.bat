@@ -25,7 +25,7 @@ echo BIN >> ftpcmd.dat
 
 echo GET %PUB400_PGM%SAVF.SAVF >> ftpcmd.dat
 
-echo bye>> ftpcmd.dat
+echo bye >> ftpcmd.dat
 
 ftp -n -s:ftpcmd.dat %PUB400_MACHINE%
 
