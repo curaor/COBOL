@@ -15,7 +15,7 @@ echo quote rcmd CHGPFM FILE(%PUB400_LIB%/QCBLLESRC) MBR(%PUB400_PGM%) SRCTYPE(CB
 
 echo quote rcmd CRTBNDCBL PGM(%PUB400_LIB%/%PUB400_PGM%) SRCFILE(%PUB400_LIB%/QCBLLESRC) SRCMBR(%PUB400_PGM%) REPLACE(*YES) OPTION(*EVENTF) DBGVIEW(*SOURCE) >> ftpcmd.dat
 
-
+echo quote rcmd CRTSAVF  FILE(OMARCURA11/DEMOSAVF) >> ftpcmd.dat
 
 echo quote rcmd CLRSAVF FILE(%PUB400_LIB%/%PUB400_PGM%SAVF) >> ftpcmd.dat
 
@@ -26,6 +26,8 @@ echo BIN >> ftpcmd.dat
 echo GET %PUB400_PGM%SAVF.SAVF >> ftpcmd.dat
 
 echo bye >> ftpcmd.dat
+
+@echo off
 
 ftp -n -s:ftpcmd.dat %PUB400_MACHINE%
 
