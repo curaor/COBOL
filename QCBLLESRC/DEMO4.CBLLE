@@ -5,6 +5,6 @@
 000500210106      *> setup the procedure division (like 'main' function)
 000600210106          PROCEDURE DIVISION.
 000700210106      *> print a string
-000800210112           DISPLAY 'DevOps COBOL ILE Demo January aaaaaaaaaaaaa'.
+000800210112           DISPLAY 'DevOps COBOL ILE Demo January test'.
 000900210106      *> end our program
 001000210106           STOP RUN.
